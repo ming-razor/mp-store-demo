@@ -1,0 +1,22 @@
+{
+  "name": "mini_program_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ming-razor/mini_program_store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ming-razor/mini_program_store/issues"
+  },
+  "homepage": "https://github.com/Ming-razor/mini_program_store#readme",
+  "dependencies": {
+    "miniprogram-api-promise": "^1.0.4"
+  }
+}

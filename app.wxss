@@ -1,10 +1,6 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+.margin_b_10 {
+    margin-bottom: 10rpx;
+}
+.margin_b_20 {
+    margin-bottom: 20rpx;
+}

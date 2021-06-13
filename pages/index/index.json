@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+       "Panel": "./components/Panel/Panel"
+    }
 }

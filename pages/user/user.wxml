@@ -1,0 +1,24 @@
+<!-- personal.wxml 个人中心 -->
+<view class='ud'>
+    <view wx:if="{{avatarUrl}}" class='user_head'>
+        <image mode="aspectFit" src="{{avatarUrl}}"></image>
+        <view class="user_name">{{nickName}}</view>
+    </view>
+    <button 
+        class="auth_btn"
+        type="primary"
+        wx:else 
+        bindtap="onGetUserInfo"
+    >授权登录</button>
+
+    <view wx:if="{{avatarUrl}}" class="weui-cells">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">我的订单</view>
+            <div class="weui-cell__ft">{{360}} 张</div>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">累计消费金额</view>
+            <div class="weui-cell__ft">{{899.22}} 元</div>
+        </view>
+    </view>
+</view>

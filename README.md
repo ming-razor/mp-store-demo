@@ -114,3 +114,15 @@ Component({
     }
 });
 ```
+
+## 实现的简单说明
+##### 文件
+> * /utils/createStore.js createStore方法 解析注入的models，创建store。
+> * /store/store.js store对象。可用于获取所有数据(state); 触发状态改变(dispatch); 订阅与取消订阅(subscribe/unsubscribe)。
+> * /store/connect.js connect方法用于接受需要订阅model，创建 behavior。 用于组件订阅
+
+
+
+
+
+

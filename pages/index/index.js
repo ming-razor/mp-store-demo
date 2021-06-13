@@ -21,6 +21,7 @@ Component({
 
         },
         detached() {
+
         },
     },
     pageLifetimes: {
@@ -73,11 +74,11 @@ Component({
         toUser() {
             wx.navigateTo({
                 url: '/pages/user/user'
-            })
+            });
         },
 
         onPageScroll(event) {
-            console.log('component 的监听页面滚动')
+            console.log('component 的监听页面滚动');
         },
         
     },

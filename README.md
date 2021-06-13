@@ -120,7 +120,7 @@ store.state
    * store的数据状态
 ---
 store.dispatch({ type, payload })
-   * type: 字符串, 以/为分割符；前面是model名，后面是方法名。 '[model name]/[method]'
+   * type: 字符串, **以/为分割符**；前面是model名，后面是方法名。 '[model name]/[method]'
    * payload 传给方法的参数
 ---
 store.subscribe(subscribeModelNames, subscribeCallback)

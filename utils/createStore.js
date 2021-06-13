@@ -1,5 +1,3 @@
-
-
 module.exports = function (models) {
     const events = {};
     const all_effects = {};

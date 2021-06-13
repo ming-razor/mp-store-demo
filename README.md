@@ -115,17 +115,19 @@ Component({
 });
 ```
 
-## `store/store.js`的属性
+## `store/store.js` 的属性
 store.state
-* store的数据状态
+   * store的数据状态
+---
 store.dispatch({ type, payload })
-* type: 字符串, 以/为分割符；前面是model名，后面是方法名。 '[model name]/[method]'
-* payload 传给方法的参数
+   * type: 字符串, 以/为分割符；前面是model名，后面是方法名。 '[model name]/[method]'
+   * payload 传给方法的参数
+---
 store.subscribe(subscribeModelNames, subscribeCallback)
-* subscribeModelNames: string[]  订阅的model
-* subscribeCallback: function()  订阅的model发布状态改变触发的回调
-   
-#### 必要文件的简单说明
+  * subscribeModelNames: string[]  订阅的model
+  * subscribeCallback: function()  订阅的model发布状态改变触发的回调
+---
+#### 必要文件的简单说明 
 * utils/createStore.js createStore方法 解析注入的models，创建store。
 * store/store.js store对象。可用于获取所有数据(state); 触发状态改变(dispatch); 订阅与取消订阅(subscribe/unsubscribe)。
 * store/connect.js connect方法用于接受需要订阅model，创建 behavior。 用于组件订阅

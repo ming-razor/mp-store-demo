@@ -127,13 +127,13 @@ store.subscribe(subscribeModelNames, subscribeCallback)
   * subscribeModelNames: string[]  订阅的model
   * subscribeCallback: function()  订阅的model发布状态改变触发的回调
 ---
-#### 必要文件的简单说明 
+## 必要文件的简单说明 
 * utils/createStore.js createStore方法 解析注入的models，创建store。
 * store/store.js store对象。可用于获取所有数据(state); 触发状态改变(dispatch); 订阅与取消订阅(subscribe/unsubscribe)。
 * store/connect.js connect方法用于接受需要订阅model，创建 behavior。 用于组件订阅
 * store/models/* 数据模块管理文件
 
-#### 非必要解释
+## 非必要解释
 > * 关于组件标签 https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/ 虽然官网申明 ‘因为 WXML 节点标签名只能是小写字母、中划线和下划线的组合，所以自定义组件的标签名也只能包含这些字符。但我发现大写并没有影响，为了提高辨识度方便查找文件所以我的组件名是大小写组合
 > * 需 `本地设置-增强编译` 是因为我习惯了async/await 的写法。
 

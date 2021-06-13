@@ -3,7 +3,7 @@ const wxp = require('../../utils/wxp');
 
 module.exports = {
     state: {
-        wx_user_info: []
+        wx_user_info: null
     },
     effects: {
         async getWxUserInfo(action, { dispatch }) {

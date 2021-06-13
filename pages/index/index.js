@@ -30,7 +30,7 @@ Component({
     methods: {
         onStoreStateUpdate({ counter, user }) {
             this.setData({
-                nickName: user.wx_user_info && user.wx_user_info.nickName,
+                nickName: user.wx_user_info ? user.wx_user_info.nickName : '',
                 add_loading: counter.add_loading,
                 reduce_loading: counter.reduce_loading,
             });

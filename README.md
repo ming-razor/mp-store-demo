@@ -122,9 +122,8 @@ Component({
 * store/models/* 数据模块管理文件
 
 #### 非必要解释
-* 关于组件标签
-> https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/ 虽然官网申明 ‘因为 WXML 节点标签名只能是小写字母、中划线和下划线的组合，所以自定义组件的标签名也只能包含这些字符。但我发现大写并没有影响，为了提高辨识度方便查找文件所以我的组件名是大小写组合
-> 需 `本地设置-增强编译` 是因为我习惯了async/await 的写法。
+> * 关于组件标签 https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/ 虽然官网申明 ‘因为 WXML 节点标签名只能是小写字母、中划线和下划线的组合，所以自定义组件的标签名也只能包含这些字符。但我发现大写并没有影响，为了提高辨识度方便查找文件所以我的组件名是大小写组合
+> * 需 `本地设置-增强编译` 是因为我习惯了async/await 的写法。
 
 
 

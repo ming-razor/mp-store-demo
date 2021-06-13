@@ -1,11 +1,17 @@
 const util = require('../../utils/util');
 
 module.exports = {
+    /* 
+        状态管理-数据
+    */
     state: {
         count: 0,
         add_loading: false,
         reduce_loading: false,
     },
+    /* 
+        异步方法
+    */
     effects: {
         async delayAdd(action, { dispatch, storeState }) {
             dispatch({
@@ -45,6 +51,9 @@ module.exports = {
             return storeState.counter.count;
         }
     },
+    /*
+        同步方法- return 的结果会覆盖此 model的 state
+    */
     reducers: {
         add(state, { payload }) {
             return {
